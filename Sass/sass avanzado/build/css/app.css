@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap");
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  min-height: 100%;
+  font-family: "Exo 2", sans-serif;
+}
+html h1, html p, html a {
+  color: white;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  -webkit-text-decoration: nones;
+          text-decoration: nones;
+  color: black;
+}
+
+img {
+  width: 100%;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.clientes-inicio {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .clientes-inicio {
+    flex-direction: row;
+    min-height: 100vh;
+  }
+}
+.clientes-inicio .aside-inicio {
+  display: block;
+  flex-basis: 20%;
+  padding: 1rem;
+  background-color: rgba(245, 243, 243, 0.1);
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(126, 58, 58, 0.3);
+}
+.clientes-inicio .aside-inicio, .clientes-inicio .cliente-informacion {
+  padding-top: 4rem;
+}
+.clientes-inicio .cliente-informacion {
+  flex-basis: 80%;
+}
+.clientes-inicio .cliente-informacion .title {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.aside-cliente h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+}
+.aside-cliente span {
+  font-weight: 900;
+  font-size: 2.5rem;
+  border-bottom: 1px solid white;
+}
+.aside-cliente .DAJ {
+  color: rgb(17, 85, 173);
+}
+.aside-cliente .corte {
+  color: rgb(204, 143, 201);
+}
+.aside-cliente p {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+@media (min-width: 768px) {
+  .aside-cliente p {
+    margin-top: 5rem;
+    text-align: start;
+  }
+}
+
+.navegacion {
+  margin-top: 2rem;
+}
+.navegacion nav {
+  display: flex;
+  flex-direction: column;
+}
+.navegacion nav a {
+  text-align: center;
+  margin-top: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: 0.4s all ease-in;
+  transition-padding: 1rem;
+}
+@media (min-width: 768px) {
+  .navegacion nav a {
+    text-align: start;
+  }
+}
+.navegacion nav a:hover {
+  background-color: rgba(15, 14, 14, 0.2);
+  color: rgb(221, 218, 20);
+}
+
+.cliente-informacion {
+  padding: 1.5rem;
+}
+
+.contenido-informacion {
+  margin-top: 4rem;
+  overflow-x: auto;
+}
+.contenido-informacion table {
+  min-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(126, 58, 58, 0.3);
+}
+@media (min-width: 768px) {
+  .contenido-informacion table {
+    min-width: 550px;
+  }
+}
+@media (min-width: 1024px) {
+  .contenido-informacion table {
+    min-width: 1000px;
+  }
+}
+.contenido-informacion table .tabla-informacion {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.contenido-informacion table th {
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.cliente-informacion h1 {
+  text-align: center;
+}
+.cliente-informacion .contenedor-formulario {
+  max-width: 30rem;
+  margin: 0 auto;
+  background-color: rgba(252, 248, 248, 0.3);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(126, 58, 58, 0.3);
+}
+@media (min-width: 768px) {
+  .cliente-informacion .contenedor-formulario {
+    max-width: 50rem;
+  }
+}
+.cliente-informacion .campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.cliente-informacion .campo label {
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 700;
+}
+.cliente-informacion .campo input {
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+.cliente-informacion .boton-agregar {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  background-color: rgba(13, 12, 37, 0.959);
+  border: none;
+  color: white;
+}
+
+.mensaje-error, .mensaje-correcto {
+  color: white;
+  font-size: 1.5rem;
+  background-color: rgba(223, 41, 41, 0.63);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: rgb(231, 28, 28) 1px solid;
+  margin-bottom: 1rem;
+}
+
+.mensaje-correcto {
+  background-color: rgb(39, 173, 39);
+  border: rgb(4, 128, 4) 1px solid;
+}
+
+.informacion-cliente {
+  background-color: rgba(11, 11, 12, 0.4);
+}
+.informacion-cliente tr {
+  border-bottom: 0.2px solid rgb(109, 103, 103);
+}
+.informacion-cliente .campos {
+  text-align: center;
+  font-size: 1.4rem;
+}
+.informacion-cliente .nombre {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.informacion-cliente .btn {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background-color: rgb(3, 124, 3);
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  transition: 0.3s all ease-in;
+}
+.informacion-cliente .btn:hover {
+  cursor: pointer;
+  box-shadow: 10px 5px 5px black;
+}
+.informacion-cliente .btn-eliminar {
+  margin-top: 1rem;
+  background-color: rgb(146, 14, 14);
+}/*# sourceMappingURL=app.css.map */
